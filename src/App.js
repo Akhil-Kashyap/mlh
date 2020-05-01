@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Menu from './components/Menu/Menu';
 import Nav from './components/Nav/Nav';
 import Header from './components/Header/Header';
+import Theme from './components/Theme/theme';
+import Schedule from './components/Schedule/schedule';
+import './App.css';
 
 class App extends Component {
 	state = {
@@ -20,6 +23,9 @@ class App extends Component {
 				<Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
 				<Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
 				<Header />
+
+				<Theme />
+				<Schedule />
 			</React.Fragment>
 		);
 	}
@@ -28,16 +34,16 @@ class App extends Component {
 	componentDidMount() {
 		const navbar = document.querySelector('#navbar');
 		const header = document.querySelector('#welcome-section');
-		const forest = document.querySelector('.forest');
+		const city = document.querySelector('.city');
 		const silhouette = document.querySelector('.silhouette');
-		let forestInitPos = -300;
+		let cityInitPos = -300;
 
 		window.onscroll = () => {
 			let scrollPos = document.documentElement.scrollTop || document.body.scrollTop;
 
 			if (scrollPos <= window.innerHeight) {
 				silhouette.style.bottom = `${parseInt(scrollPos / 6)}px`;
-				forest.style.bottom = `${parseInt(forestInitPos + scrollPos / 6)}px`;
+				city.style.bottom = `${parseInt(cityInitPos + scrollPos / 6)}px`;
 			}
 
 			if (scrollPos - 100 <= window.innerHeight) header.style.visibility = header.style.visibility === 'hidden' && 'visible';

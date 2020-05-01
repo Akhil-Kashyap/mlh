@@ -15,12 +15,12 @@ const Menu = (props) => {
 					</li>
 					<li>
 						<a href="#about" onClick={props.toggleMenu}>
-							ABOUT
+							THEME
 						</a>
 					</li>
 					<li>
-						<a href="#projects" onClick={props.toggleMenu}>
-							PORTFOLIO
+						<a href="#schedule" onClick={props.toggleMenu}>
+							SCHEDULE
 						</a>
 					</li>
 					<li>
