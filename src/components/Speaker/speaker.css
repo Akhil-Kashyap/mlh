@@ -1,0 +1,177 @@
+#speakers {
+	min-height: 100vh;
+	font-size: 1.4rem;
+	position: relative;
+	background: #f0f0f0;
+	clip-path: polygon(0 0, 20% 5%, 100% 0, 100% 100%, 80% 95%, 0 100%);
+	margin-top: -10rem;
+	background: #fafafa url(../../Images/speaker.png) center right no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	z-index: 1;
+}
+
+#speakers a,
+#speakers a:visited {
+	color: #f300b4;
+}
+
+#speakers a:hover,
+#speakers a:active {
+	color: #252934;
+}
+
+/* Container */
+#speakers .speakers-container {
+	max-width: 1400px;
+	margin: 0 auto;
+	width: 100%;
+	padding: 12rem 5rem 8rem;
+}
+
+/* Heading */
+#speakers .heading .title {
+	text-align: center;
+	font-size: 2.4rem;
+	line-height: 2.4rem;
+}
+
+#speakers .heading .separator {
+	background: #f300b4;
+	width: 150px;
+	height: 2px;
+	margin: 1rem auto;
+}
+
+#speakers .heading .subtitle {
+	font-size: 1.4rem;
+	text-align: center;
+	width: 70%;
+	margin: 0 auto;
+	text-align: justify;
+}
+
+/* Single speaker */
+#speakers .speaker {
+	margin: 1rem auto;
+	width: 70%;
+	padding: 2rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 2rem;
+}
+
+/* speaker Image */
+#speakers .speaker .speaker-link {
+	display: block;
+	margin: auto 0;
+	color: #252934;
+	overflow: hidden;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #fafafa;
+	box-shadow: 0 20px 10px -10px #25293450;
+	transition: 300ms;
+}
+
+#speakers .speaker .speaker-link:hover {
+	box-shadow: 0 50px 15px -30px #25293450;
+}
+
+#speakers .speaker .speaker-link:hover > img {
+	filter: saturate(1);
+	transform: scale(1.05);
+}
+
+#speakers .speaker .speaker-image {
+	width: 100%;
+	transform: scale(1.2);
+	filter: saturate(0);
+	transition: all 300ms;
+}
+
+/* speaker Details */
+#speakers .speaker .speaker-details {
+	margin: auto 0;
+}
+
+#speakers .speaker-details .speaker-tile {
+	font-size: 2rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-bottom: 0;
+	color: #f300b4;
+}
+
+/* Icons */
+#speakers .speaker-details .icons {
+	margin: 0;
+	color: #252934;
+}
+
+#speakers .speaker-details .icons i {
+	margin-right: .4rem;
+	font-weight: normal;
+	font-size: 1.4rem;
+}
+
+/* Text */
+#speakers .speaker-details small {
+	font-style: italic;
+}
+
+#speakers .speaker-details p {
+	margin: 1rem 0;
+}
+
+/* Buttons */
+#speakers .speaker-details .buttons {
+	display: flex;
+	justify-content: space-between;
+}
+
+#speakers .speaker-details .buttons a {
+	width: 49%;
+	padding: .5rem;
+	border: none;
+	border-bottom: 1px solid #f300b4;
+	color: #252934;
+	background: #fafafa;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+#speakers .speaker-details .buttons a:hover {
+	background: #f300b4;
+	color: #fafafa;
+}
+#speakers .speaker-details .buttons i {
+	font-size: .8rem;
+	vertical-align: middle;
+	margin-left: .5rem;
+}
+
+@media only screen and (max-width: 1149px) {
+	#speakers .speaker {
+		grid-template-columns: 1fr 2fr;
+	}
+}
+
+@media only screen and (max-width: 949px) {
+	#speakers .speaker {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 649px) {
+	#speakers {
+		background: #f0f0f0;
+	}
+	#speakers .speakers-container {
+		padding: 12rem 0 8rem;
+	}
+	#speakers .speaker {
+		padding: 2rem 0;
+	}
+}

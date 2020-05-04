@@ -43,7 +43,7 @@
 	height: 80%;
 	opacity: 0;
 	animation: city-move-in 1000ms 500ms forwards;
-	border-bottom: 300px solid #000000;
+	border-bottom: 400px solid #000000;
 }
 
 @keyframes city-move-in {
@@ -110,7 +110,7 @@
 	width: fit-content;
 	position: absolute;
 	right: 0;
-	top: 50%;
+	top: 40%;
 	right: 25%;
 	opacity: 0;
 	transform: translate(0, -50%);
@@ -214,5 +214,9 @@
 
 	.silhouette {
 		width: 85%;
+	}
+
+	#welcome-section .container h1 {
+		font-size: 3rem;
 	}
 }

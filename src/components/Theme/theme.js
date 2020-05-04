@@ -1,6 +1,5 @@
 import React from 'react';
 import './theme.css';
-import Schedule from '../Schedule/schedule';
 
 const theme = (props) => {
 	return (

@@ -24,7 +24,7 @@ const schedule = () => {
 						</div>
 					</div>
 				</div>
-				<div className="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+				<div className="timeline__event  animated fadeInUp delay-3s timeline__event--type2">
 					<div className="timeline__event__icon ">
 						<i className="fas fa-laptop-code" />
 					</div>
@@ -39,7 +39,7 @@ const schedule = () => {
 						</div>
 					</div>
 				</div>
-				<div className="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+				<div className="timeline__event animated fadeInUp delay-2s timeline__event--type3">
 					<div className="timeline__event__icon">
 						<i className="lni-burger" />
 					</div>
@@ -54,7 +54,7 @@ const schedule = () => {
 						</div>
 					</div>
 				</div>
-				<div className="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+				<div className="timeline__event animated fadeInUp delay-1s timeline__event--type1">
 					<div className="timeline__event__icon">
 						<i className="fas fa-file-powerpoint" />
 					</div>
@@ -69,7 +69,7 @@ const schedule = () => {
 						</div>
 					</div>
 				</div>
-				<div className="timeline__event animated fadeInUp timeline__event--type1">
+				<div className="timeline__event animated fadeInUp timeline__event--type2">
 					<div className="timeline__event__icon">
 						<i className="lni-cake" />
 					</div>

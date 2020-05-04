@@ -23,12 +23,13 @@
 	flex-direction: column;
 	margin: 20px auto;
 	position: relative;
+	background: #f0f0f0;
 	background: linear-gradient(215deg, #f0f0f0 0%, #fafafa 100%);
 	z-index: 1;
-	margin-top: -3rem;
-	padding-bottom: 5rem;
-	background: #fafafa url(../../Images/hackathon1.png) center left no-repeat;
+	background: #fafafa url(../../Images/schedule.png) center left no-repeat;
 	background-attachment: fixed;
+	margin-top: -3rem;
+	padding-bottom: 10rem;
 }
 .timeline__event {
 	margin-bottom: 20px;
@@ -200,6 +201,7 @@
 	.timeline__event {
 		flex-direction: column;
 		align-self: center;
+		width: 80%;
 	}
 	.timeline__event__content {
 		width: 100%;

@@ -24,6 +24,11 @@ const Menu = (props) => {
 						</a>
 					</li>
 					<li>
+						<a href="#speakers" onClick={props.toggleMenu}>
+							SPEAKERS
+						</a>
+					</li>
+					<li>
 						<a href="#contact" onClick={props.toggleMenu}>
 							CONTACT
 						</a>

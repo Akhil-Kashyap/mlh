@@ -34,3 +34,7 @@ a:hover,
 a:active {
 	color: #f300b4;
 }
+
+h3 {
+	font-weight: 600;
+}

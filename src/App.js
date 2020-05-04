@@ -4,6 +4,7 @@ import Nav from './components/Nav/Nav';
 import Header from './components/Header/Header';
 import Theme from './components/Theme/theme';
 import Schedule from './components/Schedule/schedule';
+import Speakers from './components/Speaker/Speakers';
 import './App.css';
 
 class App extends Component {
@@ -23,9 +24,10 @@ class App extends Component {
 				<Menu toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
 				<Nav toggleMenu={this.toggleMenu} showMenu={this.state.menuState} />
 				<Header />
-
 				<Theme />
+
 				<Schedule />
+				<Speakers />
 			</React.Fragment>
 		);
 	}

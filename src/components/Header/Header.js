@@ -15,12 +15,6 @@ const Header = (props) => {
 						<span className="color">Rise Again!</span>
 					</span>
 				</h1>
-				<div className="buttons">
-					{/* <a href="#projects">Register</a> */}
-					<a href="#contact" className="cta">
-						Register Now
-					</a>
-				</div>
 			</div>
 		</header>
 	);
